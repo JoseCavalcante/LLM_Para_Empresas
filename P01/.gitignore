@@ -1,1 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+
+# Ambiente
+.env
+venv/
+
+# Cache LLM
+.cache/
+chroma/
+vectorstore/
+
+# Logs
+logs/
 
