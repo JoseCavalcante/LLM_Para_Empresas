@@ -30,3 +30,16 @@
   <li>Faiss</li>
   <li>Croma DB</li>  
 </ul>
+
+<p>Ferramentas e conceitos:</p>
+
+<ul>
+  <li>Python</li>
+  <li>Groq</li>
+  <li>MS VS Code</li>
+  <li>LangChain</li>
+  <li>Técnicas de Engenharia de Prompts</li>
+  <li>Streamlit</li>
+</ul>
+
+
