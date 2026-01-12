@@ -1,29 +1,11 @@
+from api.groq_router_API import router as groq_router
+from api.groq_router_full_API import router as groq_router_full
 from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware
-from dotenv import load_dotenv
-import os
 
-from api.groq_router import router as api_chat
-
-load_dotenv()
-
-app = FastAPI()
-
-# configuracao do CORS
-def get_cors_origins():
-
-    origins = os.getenv("CORS_ORIGINS")
-
-    if origins:
-        return[origin.strip() for origin in origins.split(",")]
-    return []
-
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins = get_cors_origins(),
-    allow_credentials = True,
-    allow_methods = ["*"],
-    allow_headers = ["*"],
+app = FastAPI(
+    title="MarketingIA API",
+    description="API para marketing digital",
+    version="1.0.0"
 )
-
-app.include_router(api_chat)
+app.include_router(groq_router, tags=["MarketingIA"])
+app.include_router(groq_router_full, tags=["MarketingIA Full"])

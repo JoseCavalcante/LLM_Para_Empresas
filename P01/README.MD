@@ -1,5 +1,0 @@
-Objetivo
-
-Tecnologias
-
-Como rodar
