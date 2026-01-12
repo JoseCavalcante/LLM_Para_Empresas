@@ -7,8 +7,8 @@
 
 <p>Lista dos projetos:</p>
 <ul>
-  <li>Marketin</li>
-  <li>Atendimento e Suporte</li>
+  <li>Marketin - Pasta P01</li>
+  <li>Atendimento e Suporte - Pasta P02</li>
   <li>Recursos Humanos</li>
   <li>Educação/li>
   <li>Finanças</li>
